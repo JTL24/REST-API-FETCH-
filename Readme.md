@@ -1,13 +1,7 @@
 # Points Management Backend API
 
 This backend API allows for the management of point transactions for different payers. It provides functionality to add points, spend points, and check the balance for each payer.
-Features
 
-    Add points for a specific payer with a timestamp.
-    Spend points, ensuring:
-        Oldest points are spent first.
-        No payer's points go negative.
-    Fetch the current balance of points for each payer.
 
 # Getting Started
 Prerequisites
