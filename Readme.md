@@ -6,8 +6,8 @@ This backend API allows for the management of point transactions for different p
 # Getting Started
 Prerequisites
 
-    Node.js
-    npm (comes with Node.js)
+- Node.js
+- npm (comes with Node.js)
 
 Installation
 
