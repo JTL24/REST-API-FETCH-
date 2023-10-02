@@ -28,7 +28,7 @@ bash
 
 cd <project-directory>
 ```
-##Install the required dependencies:
+## Install the required dependencies:
 ```
 npm install
 Running the Server
