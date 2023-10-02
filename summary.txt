@@ -1,0 +1,25 @@
+1. Why did you choose the tools, libraries, and language you used for the coding exercise?
+I choose Node.js as my server-side framework and JavaScript as the programming language based on my prior experience developing a REST API for the Calcutta project, 
+which can be referenced on my GitHub and resume.  It was a great way for me to hone my skills in Node.Js and Javascipt to help me further my understanding of REST API creations 
+that will become useful to me when working on my Calcutta project. Combining it with Express makes setting up a basic server extremely easy along with being lightweight 
+and performs well because it doesn't carry unneccessary bloat. I integreated the 'body-parser' middleware because it is a simple tool that is able to parse incoming request bodies 
+in a middleware before handlers. It makes using the incoming request's body data way more convienent and since this API expects the client to send data as JSON, it was perfect tool
+for the task. 
+
+2. What are the advantages and disadvantages of your solution?
+The advantages of my code is that it is staright forward and easy to understand for most programmers with basic experience in Node.Js and Javascipt. Using arrays and objects 
+(transactions and payerBalances) for storage ensures fast access times for reading and writing data, as opposed to external databases. The logic to spend points based on timestaps 
+and ensuring no pauer's ponts go negative is sound logic and commented clearly for a programmer to understand.
+
+The disadvantages of the code is that since the data is stored in memroy, if the server restarts or crashes, all stored data will be lost. This definitely became annoying to deal with 
+when it came to testing. The spending logic that sorts the 'transactions' array, could become inefficient as data becomes larger. The sorting time coplexity is O(NlogN), and looping
+through the transactions to deduct points could potenitally, in the worst case, be O(N). This complexity of O(NlogN + N) could become slow with a large number of transactions for the 
+'/spend' endpoint. The code has a lack of testing as it does not come with unit or integration tests, which can be used to ensure correctness of the code in various scenarios. 
+
+3. What has been a favorite school/personal project thus far? What about it that challenged you?
+My favorite project by far has been my personal project, my full stack web application that creates a platform to do Calcutta auctions. This venture resonates deeply with me due to its 
+practical utility, the challenges it presents, and the opportunity it offers to expand my technical toolkit. Calcutta pools are a place where a league is created with a group of people 
+and a Calcutta auction takes place. These are the rules: "teams are auctioned off to individuals or groups, and the highest bidder “owns” that team for the duration of the tournament. 
+All the money raised during the auction goes to the pot and winners of  each stage of the tournament receive a certain percentage of the pot that is predetermined." (Forbes) I love the 
+opportunity it gives me to delve into the world of software engineering and learn new tools that aren't taught in the classroom, such as REST APIs and relational databases (MongoDB). 
+It has been a challenging process creating a project with a new tech stack and language that I was unfamiliar, but learning and struggling through the process has been all part of the fun. 
