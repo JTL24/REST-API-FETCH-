@@ -16,12 +16,7 @@ Installation
 bash
 git clone <repository-url>
 ```
-## Navigate to the project directory:
-```
-bash
 
-cd <project-directory>
-```
 ## Install the required dependencies:
 ```
 npm install
